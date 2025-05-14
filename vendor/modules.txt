@@ -1070,7 +1070,7 @@ gopkg.in/yaml.v3
 ## explicit; go 1.24.0
 # k8s.io/externaljwt v0.0.0 => ./staging/src/k8s.io/externaljwt
 ## explicit; go 1.24.0
-# k8s.io/gengo/v2 v2.0.0-20250207200755-1244d31929d7
+# k8s.io/gengo/v2 v2.0.0-20250207200755-1244d31929d7 => github.com/shashankram/gengo/v2 v2.0.0-20250514214217-7f42ea5be748
 ## explicit; go 1.20
 k8s.io/gengo/v2
 k8s.io/gengo/v2/generator
@@ -1098,7 +1098,7 @@ k8s.io/klog/v2/textlogger
 ## explicit; go 1.24.0
 # k8s.io/kube-controller-manager v0.0.0 => ./staging/src/k8s.io/kube-controller-manager
 ## explicit; go 1.24.0
-# k8s.io/kube-openapi v0.0.0-20250318190949-c8a335a9a2ff
+# k8s.io/kube-openapi v0.0.0-20250318190949-c8a335a9a2ff => github.com/shashankram/kube-openapi v0.0.0-20250514231544-2f8ab3503576
 ## explicit; go 1.21
 k8s.io/kube-openapi/cmd/openapi-gen
 k8s.io/kube-openapi/cmd/openapi-gen/args
@@ -1280,3 +1280,5 @@ sigs.k8s.io/structured-merge-diff/v4/value
 sigs.k8s.io/yaml
 sigs.k8s.io/yaml/goyaml.v2
 sigs.k8s.io/yaml/goyaml.v3
+# k8s.io/kube-openapi => github.com/shashankram/kube-openapi v0.0.0-20250514231544-2f8ab3503576
+# k8s.io/gengo/v2 => github.com/shashankram/gengo/v2 v2.0.0-20250514214217-7f42ea5be748

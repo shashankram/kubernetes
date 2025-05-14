@@ -22,6 +22,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 
 	"github.com/spf13/pflag"
@@ -33,6 +34,7 @@ import (
 )
 
 func main() {
+	fmt.Println("TEST BINARY")
 	klog.InitFlags(nil)
 	args := args.New()
 

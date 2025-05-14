@@ -123,6 +123,8 @@ require (
 	sigs.k8s.io/yaml v1.4.0
 )
 
+replace k8s.io/kube-openapi => github.com/shashankram/kube-openapi v0.0.0-20250514231544-2f8ab3503576
+
 require (
 	cel.dev/expr v0.23.1 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20230124172434-306776ec8161 // indirect
@@ -223,6 +225,8 @@ require (
 	sigs.k8s.io/kustomize/kustomize/v5 v5.6.0 // indirect
 	sigs.k8s.io/kustomize/kyaml v0.19.0 // indirect
 )
+
+replace k8s.io/gengo/v2 => github.com/shashankram/gengo/v2 v2.0.0-20250514214217-7f42ea5be748
 
 replace (
 	k8s.io/api => ./staging/src/k8s.io/api
