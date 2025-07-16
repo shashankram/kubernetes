@@ -1459,7 +1459,7 @@ type SecretVolumeSource struct {
 }
 
 const (
-	SecretVolumeSourceDefaultMode int32 = 0644
+	SecretVolumeSourceDefaultMode int32 = 0o644
 )
 
 // Adapts a secret into a projected volume.
@@ -1905,7 +1905,7 @@ type ConfigMapVolumeSource struct {
 }
 
 const (
-	ConfigMapVolumeSourceDefaultMode int32 = 0644
+	ConfigMapVolumeSourceDefaultMode int32 = 0o644
 )
 
 // Adapts a ConfigMap into a projected volume.
@@ -2043,7 +2043,7 @@ type VolumeProjection struct {
 }
 
 const (
-	ProjectedVolumeSourceDefaultMode int32 = 0644
+	ProjectedVolumeSourceDefaultMode int32 = 0o644
 )
 
 // Maps a string key to a path within a volume.
@@ -5421,7 +5421,8 @@ const (
 	ServiceInternalTrafficPolicyLocal ServiceInternalTrafficPolicy = "Local"
 )
 
-// for backwards compat
+// ServiceInternalTrafficPolicy describes how nodes distribute service traffic they
+// receive on the ClusterIP.
 // +enum
 type ServiceInternalTrafficPolicyType = ServiceInternalTrafficPolicy
 
@@ -5441,7 +5442,9 @@ const (
 	ServiceExternalTrafficPolicyLocal ServiceExternalTrafficPolicy = "Local"
 )
 
-// for backwards compat
+// ServiceExternalTrafficPolicy describes how nodes distribute service traffic they
+// receive on one of the Service's "externally-facing" addresses (NodePorts, ExternalIPs,
+// and LoadBalancer IPs.
 // +enum
 type ServiceExternalTrafficPolicyType = ServiceExternalTrafficPolicy
 
@@ -5576,7 +5579,7 @@ const (
 	IPFamilyPolicyRequireDualStack IPFamilyPolicy = "RequireDualStack"
 )
 
-// for backwards compat
+// IPFamilyPolicy represents the dual-stack-ness requested or required by a Service
 // +enum
 type IPFamilyPolicyType = IPFamilyPolicy
 
@@ -7810,7 +7813,7 @@ type DownwardAPIVolumeSource struct {
 }
 
 const (
-	DownwardAPIVolumeSourceDefaultMode int32 = 0644
+	DownwardAPIVolumeSourceDefaultMode int32 = 0o644
 )
 
 // DownwardAPIVolumeFile represents information to create the file containing the pod field

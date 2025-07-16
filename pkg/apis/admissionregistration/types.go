@@ -1034,6 +1034,7 @@ type MutatingWebhook struct {
 }
 
 // ReinvocationPolicyType specifies what type of policy the admission hook uses.
+// +enum
 type ReinvocationPolicyType string
 
 var (

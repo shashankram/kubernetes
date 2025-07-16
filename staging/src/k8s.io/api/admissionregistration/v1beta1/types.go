@@ -26,6 +26,7 @@ import (
 type Rule = v1.Rule
 
 // ScopeType specifies a scope for a Rule.
+// +enum
 type ScopeType = v1.ScopeType
 
 const (
@@ -1073,6 +1074,7 @@ type MutatingWebhook struct {
 }
 
 // ReinvocationPolicyType specifies what type of policy the admission hook uses.
+// +enum
 type ReinvocationPolicyType string
 
 const (
