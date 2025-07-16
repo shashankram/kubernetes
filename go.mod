@@ -224,6 +224,8 @@ require (
 	sigs.k8s.io/kustomize/kyaml v0.19.0 // indirect
 )
 
+replace k8s.io/gengo/v2 => github.com/shashankram/gengo/v2 v2.0.0-20250716170353-b3fb8bb203d7
+
 replace (
 	k8s.io/api => ./staging/src/k8s.io/api
 	k8s.io/apiextensions-apiserver => ./staging/src/k8s.io/apiextensions-apiserver
